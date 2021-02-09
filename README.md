@@ -1,2 +1,155 @@
-# Multi-Class-Sentimental-Analysis-Deep-Learning
-5-class Sentimental Analysis using various LSTM Architectures and Comparison
+# Multi-Class Sentimental Analysis Deep Learning #
+## 5-class Sentimental Analysis using various LSTM Architectures and Comparison ## 
+
+
+## Purpose ##
+
+To use different LSTM architectures having different number of layers and regularization tweaks to do multi-class sentimental analysis. Accuracy and loss are being analyzed for comparison between architectures. The implementation is done in Keras.
+
+## Steps at a Glance: ##
+
+1. Take in Amazon Review dataset as input
+
+2. Generate a vocabulary of all words
+
+3. Make a word-frequency table having frequency corresponding to each word
+
+4. Generate the index of each word based on sorted frequency (only top ‘n’ words are considered)
+
+5. Encode the reviews as a set of indices of top ‘n’ frequent words. Remaining words are ignored.
+
+6. Run the LSTM Model on Single Layer & Double-Layer LSTM, each layer having 100s of LSTMs stacked in parallel.
+
+7. Tune for best Accuracy by changing the number of neurons in each layer to compare performance of different architectures.
+
+8. Draw the error plots, of both train and test loss, for each architurecture to find whether the model is overfitting or not.
+
+9. Apply regularization such as Dropout, L1, L2, L1L2 or a combination of these to reduce overfitting.
+
+10. Conclusion based on the accuracy and plots obtained with test data.
+
+
+## Data Source## 
+
+Amazon Fine Food Review Dataset: https://www.kaggle.com/snap/amazon-fine-food-reviews
+
+The Amazon Fine Food Reviews dataset consists of reviews of fine foods from Amazon.
+Number of reviews : 568,454
+Number of users : 256,059
+Number of products : 74,258
+Timespan: Oct 1999 : Oct 2012
+Number of Attributes/Columns in data: 10 
+
+    
+
+## Model 1: Single Layer LSTM Architecture ##
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.1.2.PNG">
+</p>
+
+### M1 + Batch-Normalization on hidden Layers ###
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.2.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.2.2.PNG">
+</p>
+
+### M1 + Batch-Normalization + Dropout ###
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.3.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.3.2.PNG">
+</p>
+
+## Model 2 (3-layered MLP Architecture) ##
+
+### Input(784)-ReLu(512)-ReLu(256)-ReLu(64)-Softmax(output) ###
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.2.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.2.2.PNG">
+</p>
+
+### M2 + Batch-Normalization on 3 hidden Layers ###
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.3.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.3.2.PNG">
+</p>
+
+### M2 + Batch-Normalization + Dropout ###
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.4.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.4.2.PNG">
+</p>
+
+## Model 3 (5-layered MLP Architecture) ##
+
+### Input(784)-ReLu(512)-ReLu(256)-ReLu(144)-ReLu(96)-ReLu(36)-Softmax(output) ###
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.2.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.2.2.PNG">
+</p>
+
+### M3 + Batch-Normalization on 5 hidden Layers ###
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.3.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.3.2.PNG">
+</p>
+
+### M3 + Batch-Normalization + Dropout ###
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.4.1.PNG">
+</p>
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.4.2.PNG">
+</p>
+
+## Summary Statistics ##
+
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/4.PNG">
+</p>
+
+## Conclusions ##
+
+1. Three architectures with single layer and double layer LSTMs are used to train frequency-encoded Amazon Review dataset.
+
+2. **Double-Layer LSTM Architecture obtained highest accuracy** on validation dataset.
+
+3. **A single layer stack of 100 LSTMs (M1) fetched a commendable validation accuracy of 89.99%.**
+
+4. The validation accuracy of multi layer neuron dense LSTM stack (M3) fell to 89.97%, though it showed a hike in training accuracy, 93.7%. The increase in training accuracy and reduction in test accuracy **points to overfitting on the train data.**
+
+5. The slight improvement in accuracy of Model 2 may not be worth the extra time spent on training such a stack-dense model. Hence, Model 1 with an accuracy of 90% is the architecture of choice. For higher accuracy **Model 2 also can be used.**
