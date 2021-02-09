@@ -42,7 +42,7 @@ Number of Attributes/Columns in data: 10
 
     
 
-## Model 1: Single Layer LSTM Architecture ##
+## Model 1: Single Layer LSTM Architecture: 100 (1) LSTM stack ##
 
 <p align="center">
     <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M1_Accuracy.png">
@@ -53,9 +53,7 @@ Number of Attributes/Columns in data: 10
 </p>
 
 
-## Model 2: Multiple Layer LSTM Architecture ##
-
-### Input(784)-ReLu(512)-ReLu(256)-ReLu(64)-Softmax(output) ###
+## Model 2: Multiple Layer LSTM Architecture: 200 (1) -150 (2) LSTM stack ##
 
 <p align="center">
     <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M2_Accuracy.png">
@@ -65,7 +63,7 @@ Number of Attributes/Columns in data: 10
     <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M2_Loss.png">
 </p>
 
-### Model 3: Multi-Layer Neuron-Dense LSTM Architecture ###
+### Model 3: Multi-Layer Neuron-Dense LSTM Architecture: 512 (1) -256 (2) LSTM stack ###
 
 <p align="center">
     <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M3_Accuracy.png">
@@ -94,4 +92,4 @@ Number of Attributes/Columns in data: 10
 
 4. The validation accuracy of multi layer neuron dense LSTM stack (M3) fell to 89.97%, though it showed a hike in training accuracy, 93.7%. The increase in training accuracy and reduction in test accuracy **points to overfitting on the train data.**
 
-5. The slight improvement in accuracy of Model 2 may not be worth the extra time spent on training such a stack-dense model. Hence, Model 1 with an accuracy of 90% is the architecture of choice. For higher accuracy **Model 2 also can be used.**
+5. The slight improvement in accuracy of Model 2 may not be worth the extra time spent on training such a stack-dense model. However, for higher accuracy **Model 2 can be used.**
