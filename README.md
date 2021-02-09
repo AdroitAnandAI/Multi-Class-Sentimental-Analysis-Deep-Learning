@@ -45,102 +45,44 @@ Number of Attributes/Columns in data: 10
 ## Model 1: Single Layer LSTM Architecture ##
 
 <p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.1.PNG">
+    <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M1_Accuracy.png">
 </p>
 
 <p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.1.2.PNG">
+    <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M1_Loss.png">
 </p>
 
-### M1 + Batch-Normalization on hidden Layers ###
 
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.2.1.PNG">
-</p>
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.2.2.PNG">
-</p>
-
-### M1 + Batch-Normalization + Dropout ###
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.3.1.PNG">
-</p>
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.1.3.2.PNG">
-</p>
-
-## Model 2 (3-layered MLP Architecture) ##
+## Model 2: Multiple Layer LSTM Architecture ##
 
 ### Input(784)-ReLu(512)-ReLu(256)-ReLu(64)-Softmax(output) ###
 
 <p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.2.1.PNG">
+    <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M2_Accuracy.png">
 </p>
 
 <p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.2.2.PNG">
+    <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M2_Loss.png">
 </p>
 
-### M2 + Batch-Normalization on 3 hidden Layers ###
+### Model 3: Multi-Layer Neuron-Dense LSTM Architecture ###
 
 <p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.3.1.PNG">
-</p>
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.3.2.PNG">
-</p>
-
-### M2 + Batch-Normalization + Dropout ###
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.4.1.PNG">
+    <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M3_Accuracy.png">
 </p>
 
 <p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.2.4.2.PNG">
+    <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/M2_Loss.png">
 </p>
 
-## Model 3 (5-layered MLP Architecture) ##
 
-### Input(784)-ReLu(512)-ReLu(256)-ReLu(144)-ReLu(96)-ReLu(36)-Softmax(output) ###
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.2.1.PNG">
-</p>
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.2.2.PNG">
-</p>
-
-### M3 + Batch-Normalization on 5 hidden Layers ###
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.3.1.PNG">
-</p>
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.3.2.PNG">
-</p>
-
-### M3 + Batch-Normalization + Dropout ###
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.4.1.PNG">
-</p>
-
-<p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/3.3.4.2.PNG">
-</p>
 
 ## Summary Statistics ##
 
 <p align="center">
-    <img src="https://github.com/AdroitAnandAI/Multiple-MLP-Architectures-on-MNIST-database-using-Keras/blob/master/images/4.PNG">
+    <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/summary.png">
 </p>
+
 
 ## Conclusions ##
 
