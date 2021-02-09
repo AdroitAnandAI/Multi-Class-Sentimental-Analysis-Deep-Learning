@@ -1,10 +1,10 @@
-# Multi-Class Sentimental Analysis Deep Learning #
-## 5-class Sentimental Analysis using various LSTM Architectures and Comparison ## 
+# Multi-Class Sentimental Analysis with Deep Learning #
+## Comparison of 5-class Sentimental Analysis using various LSTM Architectures ## 
 
 
 ## Purpose ##
 
-To use different LSTM architectures having different number of layers and regularization tweaks to do multi-class sentimental analysis. Accuracy and loss are being analyzed for comparison between architectures. The implementation is done in Keras.
+To use **different LSTM architectures having different number of layers and regularization tweaks to do multi-class sentimental analysis.** Accuracy and loss are being analyzed to compare these architectures. The implementation is done in Keras.
 
 ## Steps at a Glance: ##
 
