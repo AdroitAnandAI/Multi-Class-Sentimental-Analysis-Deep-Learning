@@ -20,9 +20,9 @@ To use **different LSTM architectures having different number of layers and regu
 
 6. Run the LSTM Model on Single Layer & Double-Layer LSTM, each layer having 100s of LSTMs stacked in parallel.
 
-7. Tune for best Accuracy by changing the number of neurons in each layer to compare performance of different architectures.
+7. Tune for higher Accuracy by changing # of neurons in each layer to compare performance of different architectures.
 
-8. Draw the error plots, of both train and test loss, for each architurecture to find whether the model is overfitting or not.
+8. Draw error plots, of both train &  test loss, for each architecture to find whether the model is overfitting or not.
 
 9. Apply regularization such as Dropout, L1, L2, L1L2 or a combination of these to reduce overfitting.
 
