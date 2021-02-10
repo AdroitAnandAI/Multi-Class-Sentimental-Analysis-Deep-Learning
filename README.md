@@ -1,6 +1,9 @@
 # Multi-Class Sentimental Analysis with Deep Learning #
-## Comparison of 5-class Sentimental Analysis using various LSTM Architectures ## 
+## 5-class Sentimental Analysis: LSTM Architecture Comparison## 
 
+<p align="center">
+    <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/sentimental_bot.gif">
+</p>
 
 ## Purpose ##
 
@@ -8,7 +11,7 @@ To use **different LSTM architectures having different number of layers and regu
 
 ## Steps at a Glance: ##
 
-1. Take in Amazon Review dataset as input
+1. Take Amazon Review dataset as input, as it contains 5 level rating along with review text.
 
 2. Generate a vocabulary of all words
 
