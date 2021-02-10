@@ -1,9 +1,13 @@
 # Multi-Class Sentimental Analysis with Deep Learning #
-## 5-class Sentimental Analysis: LSTM Architecture Comparison## 
+## 5-class Sentimental Analysis: LSTM Architecture Comparison ## 
 
 <p align="center">
     <img src="https://github.com/AdroitAnandAI/Multi-Class-Sentimental-Analysis-Deep-Learning/blob/main/sentimental_bot.gif">
 </p>
+
+## Usage ##
+
+`python3 predictEmotions.py`
 
 ## Purpose ##
 
